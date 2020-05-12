@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Pathfinding, visualised with P5.js"
+title:  "Pathfinding visualised with P5.js"
 date:   2020-05-11 13:48:14 +0100
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-## P5.js
+I've seen a few projects like this one around the internet, and I wanted to create my own - as a learning exercise for P5.js and as a means of demystifying pathfinding algorithms. 
 
-Some text giving a brief explanation of P5.js and what I use
-it for.
+## The tool
 
-## Dijkstra's algorithm
+[P5.js](https://p5js.org/) is a graphical library for JavaScript that lowers the technical bar to creative coding. 
+
+## The brain
 
 Dijkstra's is a famous pathfinding algorithm.
 
-I don't know to be honest but it's [fast](http://www.bbc.co.uk)
+`some = () => code { return dog() }`

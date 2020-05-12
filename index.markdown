@@ -3,12 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+title: Cameron Robson
 ---
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
 	{%- for post in site.posts -%}
-	<li class="post-container">
-		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+	<li class="post-teaser-container">
+		{%- assign date_format = site.date_format | default: "%e-%m-%y" -%}
 		<div>
 			<a class="post-teaser-title" href="{{ post.url | relative_url }}">
 				{{ post.title | escape }}
