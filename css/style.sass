@@ -1,0 +1,105 @@
+---
+--- 
+  
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap');
+
+*:root
+  --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
+  --sans-font: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif
+
+html
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
+
+body 
+  margin: 0
+  font-family: var(--sans-font)
+  font-size: 16px
+  font-weight: normal
+  line-height: 1.6
+
+#content
+  margin: 0 auto
+  max-width: 640px
+
+header h1 
+  font-size: 2em
+  color: #249b91
+  font-family: 'Chivo', sans-serif
+  text-transform: lowercase
+
+nav
+  border-bottom: 3px solid #eccb03
+
+ul
+  padding-left: 0
+  list-style: none
+
+main
+  margin: 0 auto
+
+h1
+  font-size: 2em
+  margin-bottom: 0.25em
+  font-weight: bolder
+  line-height: 
+
+h2
+  font-size: 1em
+  font-weight: normal
+
+img 
+  max-width: 100%
+
+.post-teaser-title
+  margin-top: 0
+  margin-bottom: 0
+
+.posts 
+  div
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+.post-teaser-container
+  display: grid
+  grid-column-gap: 0.5em
+  grid-template-columns: 1fr auto
+  align-items: baseline
+  margin-bottom: 1em
+  border-bottom: 1px solid #e6e6e6
+
+code
+  background-color: #eccb0482
+  padding: 2px 5px 3px 5px
+  border-radius: 3px
+  font-family: var(--mono-font)
+
+time 
+  color: #333333
+  font-size: 1em
+  font-variant-numeric: tabular-nums
+
+/* anchor styling */
+header a,
+nav a,
+a.post-teaser-title 
+  text-decoration: none
+a:link
+  color: inherit
+a:visited
+  color: inherit
+a:hover
+  text-decoration: underline
+
+@media only screen and (max-width: 700px)
+  body 
+    margin: 1em
+
+@media only screen and (max-width: 400px)
+  body 
+    margin: 1em
+  .post-teaser-container
+    grid-template-columns: auto
+    grid-template-rows: 1fr 1fr

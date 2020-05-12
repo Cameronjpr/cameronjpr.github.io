@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Pathfinding visualised with P5.js"
+title:  "Visualising Dijkstra's algorithm with P5.js"
 date:   2020-05-11 13:48:14 +0100
 ---
+
+![screenshot of tool](/assets/images/dijkstra.png)
 
 I've seen a few projects like this one around the internet, and I wanted to create my own - as a learning exercise for P5.js and as a means of demystifying pathfinding algorithms. 
 
@@ -13,5 +15,3 @@ I've seen a few projects like this one around the internet, and I wanted to crea
 ## The brain
 
 Dijkstra's is a famous pathfinding algorithm.
-
-`some = () => code { return dog() }`

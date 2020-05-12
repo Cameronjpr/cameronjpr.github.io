@@ -12,7 +12,7 @@ Here are some things I worked on:
 
 ## Games
 
-Tic Tac Toe [GH]()
+Tic Tac Toe
 
 Escape!
 
