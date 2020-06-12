@@ -9,7 +9,7 @@ title: Cameron Robson
 <ul class="posts">
 	{%- for post in site.posts -%}
 	<li class="post-teaser-container">
-		{%- assign date_format = site.date_format | default: "%e/%m/%y" -%}
+		{%- assign date_format = site.date_format | default: "%e.%m.%y" -%}
 		<div>
 			<a class="post-teaser-title" href="{{ post.url | relative_url }}">
 				{{ post.title | escape }}

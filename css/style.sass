@@ -5,7 +5,7 @@
 
 *:root
   --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
-  --sans-font: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif
+  --sans-font: system-ui, sans-serif
 
 html
   -webkit-font-smoothing: antialiased
@@ -23,6 +23,9 @@ body
   margin: 0 auto
   max-width: 640px
 
+article 
+  padding-bottom: 2em
+
 header h1 
   font-size: 2em
   color: #249b91
@@ -32,9 +35,13 @@ header h1
 nav
   border-bottom: 3px solid #eccb03
 
-ul
+ul, nav ul
   padding-left: 0
   list-style: none
+
+article ul
+  padding-left: 1em
+  list-style: circle  
 
 main
   margin: 0 auto
@@ -45,11 +52,17 @@ h1
   font-weight: bolder
 
 h2
-  font-size: 1em
+  font-size: 1.2em
   font-weight: normal
 
 img 
   max-width: 100%
+
+hr 
+  margin-top: 2em
+  height: 3px
+  background: #249b91
+  border: none
 
 .post-teaser-title
   margin-top: 0
