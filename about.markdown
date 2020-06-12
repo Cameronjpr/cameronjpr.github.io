@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi, I'm Cameron. 
+Hi, I'm [Cameron](https://twitter.com/Cameronjpr). 
 
 I like making games, creative coding, and coffee. 
 
