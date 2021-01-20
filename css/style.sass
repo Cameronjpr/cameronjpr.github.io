@@ -1,6 +1,5 @@
 ---
 --- 
-  
 
 *:root
   --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
@@ -11,7 +10,7 @@ html
   -moz-osx-font-smoothing: grayscale
   text-rendering: optimizeLegibility
 
-body 
+body
   margin: 0
   font-family: var(--sans-font)
   font-size: 16px
@@ -22,25 +21,27 @@ body
   margin: 0 auto
   max-width: 640px
 
-article 
+article
   padding-bottom: 2em
 
-header h1 
-  font-size: 2em
-  color: #249b91
-  font-family: sans-serif
-  text-transform: lowercase
+header
+  h1
+    font-size: 2em
+    color: #249b91
+    font-family: sans-serif
+    text-transform: lowercase
 
 nav
   border-bottom: 3px solid #eccb03
 
-ul, nav ul
+ul
   padding-left: 0
   list-style: none
 
-article ul
-  padding-left: 1em
-  list-style: circle  
+article
+  ul
+    padding-left: 1em
+    list-style: circle
 
 main
   margin: 0 auto
@@ -54,10 +55,10 @@ h2
   font-size: 1.2em
   font-weight: normal
 
-img 
+img
   max-width: 100%
 
-hr 
+hr
   margin-top: 2em
   height: 3px
   background: #249b91
@@ -67,7 +68,7 @@ hr
   margin-top: 0
   margin-bottom: 0
 
-.posts 
+.posts
   div
     white-space: nowrap
     overflow: hidden
@@ -87,7 +88,7 @@ code
   border-radius: 3px
   font-family: var(--mono-font)
 
-time 
+time
   color: #333333
   font-size: 1em
   font-variant-numeric: tabular-nums
@@ -95,7 +96,7 @@ time
 /* anchor styling */
 header a,
 nav a,
-a.post-teaser-title 
+a.post-teaser-title
   text-decoration: none
 a:link
   color: inherit
@@ -105,11 +106,11 @@ a:hover
   text-decoration: underline
 
 @media only screen and (max-width: 700px)
-  body 
+  body
     margin: 1em
 
 @media only screen and (max-width: 400px)
-  body 
+  body
     margin: 1em
   .post-teaser-container
     grid-template-columns: auto
