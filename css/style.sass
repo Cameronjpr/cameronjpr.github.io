@@ -1,9 +1,13 @@
 ---
 --- 
 
+$background-color: #fff  
+$base-color: #F24236
+$accent-color: #3B413C
+
 *:root
   --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
-  --sans-font: system-ui, sans-serif
+  --sans-font: -apple-system, system-ui, "segoe ui", sans-serif
 
 html
   -webkit-font-smoothing: antialiased
@@ -16,10 +20,11 @@ body
   font-size: 16px
   font-weight: normal
   line-height: 1.6
+  background: $background-color
 
 #content
   margin: 0 auto
-  max-width: 640px
+  max-width: 40em
 
 article
   padding-bottom: 2em
@@ -27,12 +32,12 @@ article
 header
   h1
     font-size: 2em
-    color: #249b91
-    font-family: sans-serif
+    color: $base-color
     text-transform: lowercase
+    font-weight: 700
 
 nav
-  border-bottom: 3px solid #eccb03
+  border-bottom: 2px solid $accent-color
 
 ul
   padding-left: 0
@@ -47,13 +52,13 @@ main
   margin: 0 auto
 
 h1
-  font-size: 2em
+  font-size: 1.5em
   margin-bottom: 0.25em
-  font-weight: bolder
+  font-weight: 600
 
 h2
-  font-size: 1.2em
-  font-weight: normal
+  font-size: 1.25em
+  font-weight: 600
 
 img
   max-width: 100%
