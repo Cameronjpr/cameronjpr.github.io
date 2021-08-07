@@ -1,9 +1,10 @@
 ---
 --- 
 
-$background-color: #fff  
-$base-color: #F24236
-$accent-color: #3B413C
+$background-color: #000  
+$base-color: #dbcb3e
+$accent-color: #cacaca
+$text-color: #fff
 
 *:root
   --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
@@ -13,6 +14,7 @@ html
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   text-rendering: optimizeLegibility
+  color: $text-color
 
 body
   margin: 0
@@ -30,14 +32,24 @@ article
   padding-bottom: 2em
 
 header
-  h1
-    font-size: 2em
-    color: $base-color
-    text-transform: lowercase
-    font-weight: 700
+//   h1
+//     font-size: 1.4em
+//     color: $base-color
+//     // text-transform: lowercase
+
+.title 
+  font-size: 1.4em
+  font-weight: 900
+  color: $base-color
 
 nav
-  border-bottom: 2px solid $accent-color
+  color: $text-color
+  ul
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+  border-bottom: 1px solid $accent-color
 
 ul
   padding-left: 0
@@ -49,6 +61,7 @@ article
     list-style: circle
 
 main
+  color: $text-color
   margin: 0 auto
 
 h1
@@ -65,8 +78,8 @@ img
 
 hr
   margin-top: 2em
-  height: 3px
-  background: #249b91
+  height: 2px
+  background: $base-color
   border: none
 
 .post-teaser-title
@@ -84,8 +97,8 @@ hr
   grid-column-gap: 0.5em
   grid-template-columns: 1fr auto
   align-items: baseline
-  margin-bottom: 1em
-  border-bottom: 1px solid #e6e6e6
+  margin-bottom: 0.5em
+  // border-bottom: 1px solid #e6e6e6
 
 code
   background-color: #eccb0482
@@ -94,11 +107,16 @@ code
   font-family: var(--mono-font)
 
 time
-  color: #333333
-  font-size: 1em
+  color: $accent-color
+  font-size: 0.8em
   font-variant-numeric: tabular-nums
 
+canvas
+  width: 320px
+  height: 160px
+
 /* anchor styling */
+a
 header a,
 nav a,
 a.post-teaser-title
@@ -108,13 +126,13 @@ a:link
 a:visited
   color: inherit
 a:hover
-  text-decoration: underline
+  text-decoration: none
 
 @media only screen and (max-width: 700px)
   body
     margin: 1em
 
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 500px)
   body
     margin: 1em
   .post-teaser-container

@@ -1,29 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <div id="content">
-      <header> 
-        <h1><a href="/">Cameron Robson</a></h1>
+      <header>
+        <nav>
+          <ul>
+            <li class="title">
+              <a href="/">Cameron Robson</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+          </ul>
+        </nav>
       </header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/">Posts</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-        </ul>
-      </nav>
-      <main>
-        {{ content }}
-      </main>
+      <main>{{ content }}</main>
     </div>
   </body>
 </html>
